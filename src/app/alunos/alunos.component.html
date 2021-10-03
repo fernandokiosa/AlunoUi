@@ -1,0 +1,30 @@
+<app-title [title]="titulo"></app-title>
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Nome</th>
+            <th>Data Nascimento</th>
+            <th>Sexo</th>
+            <th>Email</th>
+            <th>CPF</th>
+            <th>Marticulado?</th>
+        </tr>
+    </thead>
+    <tbody *ngIf="alunos && alunos.length">
+        <tr *ngFor="let aluno of alunos">
+            <td>{{ aluno.nome }}</td>
+            <td>{{ aluno.dataNascimento }}</td>
+            <td>{{ aluno.sexo }}</td>
+            <td>{{ aluno.email }}</td>
+            <td>{{ aluno.cpf }}</td>
+            <td>{{ aluno.matriculado }}</td>
+        </tr>
+    </tbody>
+    <tfoot *ngIf="!alunos.length">
+        <tr>
+            <td colspan="7" class="text-center">
+                <h4>Nenhum aluno encontrado</h4>
+            </td>
+        </tr>
+    </tfoot>
+</table>
