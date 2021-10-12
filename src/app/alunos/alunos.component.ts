@@ -34,7 +34,7 @@ export class AlunosComponent implements OnInit {
         matriculado: 'Sim',
       },
       {
-        nome: 'Adré Alfredo', 
+        nome: 'André Alfredo', 
         dataNascimento: '30/07/1998', 
         sexo: 'M', 
         email: 'aafred@gmail.com', 

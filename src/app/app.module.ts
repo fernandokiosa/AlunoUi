@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { AlunosComponent } from './alunos/alunos.component';
 import { NavComponent } from './nav/nav.component';
 import { TitleComponent } from './shared/title/title.component';
+import { CadastrarAlunoComponent } from './alunos/cadastrar-aluno/cadastrar-aluno.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlunosComponent,
     NavComponent,
-    TitleComponent
+    TitleComponent,
+    CadastrarAlunoComponent
   ],
   imports: [
     BrowserModule,
