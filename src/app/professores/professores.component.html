@@ -7,8 +7,7 @@
             <th>Sexo</th>
             <th>Email</th>
             <th>CPF</th>
-            <th>Contratado?</th>
-            <th>Estagiário?</th>
+            <th>Contratado</th>
         </tr>
     </thead>
     <tbody *ngIf="professores && professores.length">
@@ -18,8 +17,7 @@
             <td>{{ professor.sexo }}</td>
             <td>{{ professor.email }}</td>
             <td>{{ professor.cpf }}</td>
-            <td>{{ professor.Contratado }}</td>
-            <td>{{ professor.Estagiárioo }}</td>
+            <td>{{ professor.contratado }}</td>
         </tr>
     </tbody>
     <tfoot *ngIf="!professores.length">

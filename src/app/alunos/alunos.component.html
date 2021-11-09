@@ -13,11 +13,11 @@
     <tbody *ngIf="alunos && alunos.length">
         <tr *ngFor="let aluno of alunos">
             <td>{{ aluno.nome }}</td>
-            <td>{{ aluno.dataNascimento }}</td>
+            <td>{{ aluno.dataNascimento | date }}</td>
             <td>{{ aluno.sexo }}</td>
             <td>{{ aluno.email }}</td>
             <td>{{ aluno.cpf }}</td>
-            <td>{{ aluno.matriculado }}</td>
+            <td>{{ aluno.matriculado == true ? "Sim" : "Não" }}</td>
         </tr>
     </tbody>
     <tfoot *ngIf="!alunos.length">
